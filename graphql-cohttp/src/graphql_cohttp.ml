@@ -1,3 +1,6 @@
+module Websocket = V_websocket
+
+
 module type HttpBody = sig
   type t
   type +'a io

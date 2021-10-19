@@ -1,3 +1,5 @@
+module Websocket = V_websocket
+
 module Make (IO : Graphql_intf.IO) (Ws : Websocket.Connection.S with type 'a IO.t = 'a IO.t) = struct
   module Json = Yojson.Basic.Util
 
